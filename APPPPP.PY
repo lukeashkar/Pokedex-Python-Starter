@@ -1,0 +1,1 @@
+"hey its me its verity ask me anything i know about a million things ill do everything whats the capital of france oh wi wi wi that is paris what does the cow say moo moo moo moo i speak that too all day do you live alone is anyone home 1 2 3 4 oh where did everybody goooo hey its me its verity"
