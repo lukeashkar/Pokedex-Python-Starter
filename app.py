@@ -11,7 +11,7 @@ def allpokemon():
         print(data[pokemon]["name"])
 
 # Add a language choice feature and print the pokemons name based on the user input
-lang= input("what language do you want( english, japanese, chinese, or french)")
+lang = input("what language do you want( english, japanese, chinese, or french)")
 for pokemon in range(len(data)):
     print(data[pokemon]["name"][lang])
 
@@ -26,16 +26,17 @@ for cooltype in data[pokemon]["type"]:
 def name():
         z=[]
         f = input("what pokemon are you searching for-")
+        f = f.lower()
         #loop through entire list
-        for pokemon in range(len(data)):
+        for pokemon in data:
         #check if user input inside of the name of the pokemon
-            if f.title in data[pokemon]["name"]:
+            if f in pokemon["name"][lang].lower():
                 #append into list if it is
-                z.append(data["name"]["lang"])
+                z.append(pokemon["name"][lang])
                 print(z)
             #if nothing is in the list return invalid search or smt
 
-data[1]["name"] #use this to cycle through the rest
+
 
 name()
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
