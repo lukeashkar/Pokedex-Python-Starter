@@ -27,17 +27,27 @@ def name():
         z=[]
         f = input("what pokemon are you searching for-")
         f = f.lower()
-        #loop through entire list
         for pokemon in data:
-        #check if user input inside of the name of the pokemon
             if f in pokemon["name"][lang].lower():
-                #append into list if it is
                 z.append(pokemon["name"][lang])
                 print(z)
-            #if nothing is in the list return invalid search or smt
-
-
-
 name()
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
+
+import json
+moves= open("./moves.json",encoding="utf8")
+poke_moves = json.load(moves)
+
+def move():
+    movelist= []
+    pirate_token= input("what pokemon do you want to see the possible moves they can learn-")
+    for pokemon in data:
+         if pirate_token["type"] == poke_moves["type"]:
+              movelist.append(poke_moves["ename"][lang])
+              print(movelist)
+
+
+
+
+move()
