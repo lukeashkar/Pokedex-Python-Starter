@@ -41,13 +41,13 @@ poke_moves = json.load(moves)
 
 def move():
     movelist= []
-    pirate_token= input("what pokemon do you want to see the possible moves they can learn-")
-    for pokemon in data:
-         if pirate_token["type"] == poke_moves["type"]:
+    pirate_token= (input("what pokemon do you want to see the possible moves they can learn-"))
+    for pokemon in poke_moves:
+         if pirate_token("type") == pokemon("type"):
               movelist.append(poke_moves["ename"][lang])
               print(movelist)
 
-
+#smth wrong with the type next to pirate token
 
 
 move()
