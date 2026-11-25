@@ -40,14 +40,18 @@ moves= open("./moves.json",encoding="utf8")
 poke_moves = json.load(moves)
 
 def move():
+    og_pokemon_not_move=[]
     movelist= []
     pirate_token= (input("what pokemon do you want to see the possible moves they can learn-"))
-    for pokemon in poke_moves:
-         if pirate_token("type") == pokemon("type"):
-              movelist.append(poke_moves["ename"][lang])
-              print(movelist)
-
-#smth wrong with the type next to pirate token
+    for pokemon in data:
+         if pokemon["name"]== pirate_token:
+              og_pokemon_not_move==pokemon["type"]
+              break
+    for move in poke_moves:
+         if move["type"] in og_pokemon_not_move:
+              movelist.append["ename"]
+    print(movelist)
+#find the type of the pokemon first then find the moves that match the types.
 
 
 move()
